@@ -18,6 +18,8 @@ void times_table(void)
 			}
 			else
 			{
+				if (j != 0)
+					_putchar(32);
 				_putchar('0' + (i * j));
 			}
 			if (j != 9)
