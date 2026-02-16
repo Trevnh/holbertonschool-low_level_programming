@@ -5,7 +5,7 @@
  * multiples of 5 print Buzz instead
  * multiples of 3 and 5 print FizzBuzz instead.
  *
- * Return: 1 Always
+ * Return: 0 Always
  */
 int main(void)
 {
@@ -35,5 +35,5 @@ int main(void)
 		}
 	}
 	printf("\n");
-	return (1);
+	return (0);
 }
