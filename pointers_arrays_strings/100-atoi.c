@@ -33,7 +33,7 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-	if (end == -1)
+	if (end == -1 && start != -1)
 	{
 		end = i - 1;
 	}
