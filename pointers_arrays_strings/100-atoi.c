@@ -9,12 +9,9 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	int j = 1;
-	int k;
 	int neg = 0;
-	int start = -1;
-	int end = -1;
 	int retval = 0;
+	int hasint = 0;
 
 	while (s[i] != '\0')
 	{
@@ -22,27 +19,21 @@ int _atoi(char *s)
 		{
 			neg++;
 		}
-		if ((start == -1) && (((s[i] >= '0') && (s[i] <= '9'))))
+		if ((s[i] >= '0') && (s[i] <= '9'))
 		{
-			start = i;
+			hasint = 1;
+			while ((s[i] >= '0') && (s[i] <= '9'))
+			{
+				retval = (retval * 10) + (s[i] - '0');
+				i++;
+			}
 		}
-		if ((start != -1) && (((s[i] < '0') || (s[i] > '9'))))
+		if (hasint == 1)
 		{
-			end = i - 1;
 			break;
 		}
 		i++;
 	}
-	if (end == -1 && start != -1)
-	{
-		end = i - 1;
-	}
-	for (k = end; k >= start; k--)
-	{
-		retval = retval + ((s[k] % 48) * j);
-		j = j * 10;
-	}
-
 	if (neg % 2 == 1)
 	{
 		retval = retval * -1;
