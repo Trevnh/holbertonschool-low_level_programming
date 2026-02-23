@@ -12,6 +12,7 @@ char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i = 0;
 	unsigned int j = 0;
+	unsigned int inside = 0;
 
 	while (haystack[i] != '\0')
 	{
@@ -20,12 +21,19 @@ char *_strstr(char *haystack, char *needle)
 		{
 			while (needle[j] != '\0')
 			{
-				if (haystack[i] == needle[j])
+				if (haystack[i + j] == needle[j])
 				{
-					return (haystack + i);
+					inside = 1;
+				}
+				else
+				{
+					inside = 0;
 				}
 				j++;
-				i++;
+			}
+			if (inside == 1)
+			{
+				return (haystack + i);
 			}
 		}
 		i++;
