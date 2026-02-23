@@ -12,7 +12,8 @@ void print_diagsums(int *a, int size)
 {
 	int i = 0;
 	int fsize = size * size;
-	int diag1, diag2;
+	int diag1 = 0;
+	int diag2 = 0;
 
 
 	for (i = 0; i < fsize; i += size + 1)
