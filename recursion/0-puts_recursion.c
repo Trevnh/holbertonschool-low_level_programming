@@ -3,7 +3,7 @@
  * _puts_recursion - Prints a string with _putchar and recursion.
  * @s: string
  *
- * Return: 0
+ * Return
  */
 void _puts_recursion(char *s)
 {
