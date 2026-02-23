@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _strpbrk - Locates first occurence in the string s of any bytes in the string
- * accept
+ * _strpbrk - Locates first occurence in the string s of any bytes in the
+ * string accept
  * @s: memory area
  * @accept: memory area
  *
