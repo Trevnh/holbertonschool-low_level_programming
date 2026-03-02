@@ -45,7 +45,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		arr[k] = s1[k];
 		k++;
 	}
-	while (k - i <= n)
+	while (k - i < n)
 	{
 		arr[k] = s2[k - i];
 		k++;
