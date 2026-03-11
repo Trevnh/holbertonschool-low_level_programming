@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_strings - prints n numbers separated by separator
+ * print_strings - prints n strings separated by separator
  * @separator: string to print between numbers
- * @n: amount of numbers to print
+ * @n: amount of strings to print
  * @...: variable number of parameters to print
  *
  * Return:
