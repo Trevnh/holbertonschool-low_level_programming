@@ -5,7 +5,7 @@
  * @head: pointer to the head of the list
  * @str: string to be added to the list
  *
- * Return: List with added node of str to tail
+ * Return: List with added node of str to head
  */
 list_t *add_node(list_t **head, const char *str)
 {
