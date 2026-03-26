@@ -1,10 +1,7 @@
 #include "lists.h"
 /**
- * add_node - Adds a node to the end of list with str
+ * free_list - Frees the list and str of each node
  * @head: pointer to the head of the list
- * @str: string to be added to the list
- *
- * Return: List with added node of str to head
  */
 void free_list(list_t *head)
 {
