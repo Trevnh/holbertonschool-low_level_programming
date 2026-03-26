@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * print_list - Prints the given
+ * print_list - Prints the strings of given list with the lengths
  * @h: list of strings and their lengths with a pointer to the next element
  *
  * Return: Number of elements printed
